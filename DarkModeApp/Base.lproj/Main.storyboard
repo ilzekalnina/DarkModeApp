@@ -15,22 +15,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mro-eE-srh">
-                                <rect key="frame" x="115" y="429" width="184" height="48"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mro-eE-srh">
+                                <rect key="frame" x="122" y="429" width="170" height="48"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="MeP-Jh-TaG"/>
                                     <constraint firstAttribute="height" constant="48" id="xBj-XC-zfL"/>
                                 </constraints>
-                                <state key="normal" title="Long long long long button">
-                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Dark Mode On">
+                                            <attributes>
+                                                <color key="NSColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                <font key="NSFont" metaFont="system" size="22"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="darkModeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WuM-8G-QNa"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstItem="Mro-eE-srh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mvk-CO-eDx"/>
-                            <constraint firstItem="Mro-eE-srh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VEM-D8-3Ui"/>
                             <constraint firstItem="Mro-eE-srh" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="YHA-mm-ElG"/>
                             <constraint firstItem="Mro-eE-srh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="taf-qM-0mV"/>
                         </constraints>
